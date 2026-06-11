@@ -20,7 +20,7 @@ with open(os.path.join(base_dir, "phishSongs.json")) as f:
     phishsongs = json.load(f)["phishsongs"]
 
 song = random.choice(phishsongs)
-canvas.create_text(400, 470, text=song, font=("Helvetica", 20, "bold"), fill="white")
-canvas.create_text(400, 505, text="By The Phish From Vermont", font=("Helvetica", 12), fill="white")
+canvas.create_text(400, 470, text=song, font=("Helvetica", 20, "bold"), fill="black")
+canvas.create_text(400, 505, text="By The Phish From Vermont", font=("Helvetica", 12), fill="black")
 
 root.mainloop()
